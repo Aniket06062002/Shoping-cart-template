@@ -1,0 +1,346 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+    /*css variable*/
+}
+:root{
+    --navbar-height: 40px;
+}
+
+/*navigtion bar*/
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+/*navigation bar Logo and image*/
+#logo{
+ 
+    margin: 6px 23px;
+
+}
+#logo img{
+    height: 100px;
+    width: 100px;
+    margin: 3px 5px;
+   
+
+}
+
+/*navigation bar List style
+#navbar{
+    position: absolute;
+    top: 0px;
+    
+}*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+#navbar ul li{
+  
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+   display: block;
+   padding: 3px 18px;
+   text-decoration: none;
+   border-radius: 20px;
+   color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/*home  section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('../woman-5632026.jpg')no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Original Surfer', cursive;
+    text-size-adjust: 50px;
+    font-size: 3.1rem;
+}
+#home p{
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+    opacity: .80;
+}
+.btn{ padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(62, 152, 226);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+/*our Product*/
+
+/*#services h1{
+    text-align: center;
+}
+
+#services{ 
+    text-align: center;
+    margin: 34px;
+    display: flex;
+
+
+}
+#services .box{
+    border: 5px solid red;
+    margin: 3px 6px;
+    border-radius: 40px;
+    background-color: rgb(rgb(240, 208, 208),
+    padding: 10px
+    10px;
+
+}
+#services .box img{
+  
+   height: 60px;
+   margin: auto;
+   display: block;
+
+
+}
+#services{
+
+ }
+#services{
+
+ }
+ */
+ 
+ #services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 5px solid rgb(97, 143, 236);
+    padding: 34px;
+    margin: 4px 55px;
+    border-radius: 28px;
+    background: rgb(158, 159, 160);
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+/*#clients-section{
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 344px;
+}
+#client-item{
+    align-items: center;
+    padding: 70px;
+    margin: 10px 20px;
+}
+#client img{
+    height: 100px;
+
+}
+
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(img/grocery-1232944.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+}*/
+
+
+
+/*utility classes*/
+
+.h-primary{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    color: rgb(11, 26, 54);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+ 
+}
+.h-secondary p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    padding: 12px;
+ 
+}
+
+
+.center{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/*Clients Section*/ 
+#client-section{
+position: relative;
+
+   
+    
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('img/grocery-1232944.jpg');
+ width: 100%;
+ height: 120%;
+ z-index: -1;
+ opacity: 0.75;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 64px;
+    margin: 30px;
+}
+
+#clients img{
+    height: 110px;
+}
+
+  /*Contact Section*/  
+  #contact{
+      position: relative;
+  }
+  #contact::before{
+      content:"";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.7;
+      background: url(img/4.jpg)no-repeat center center/cover;
+  }
+  /*#contact-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 34px;
+
+
+  }
+
+  }
+  #contact-box input,
+  #contact-box textarea{
+      width: 100%;
+      padding: .7rem;
+
+  }
+  #contact-box form{
+      width: 40%;
+      
+  }
+  #contact-box label{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.3rem;
+  }*/
+  #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 19px;
+    font-size: 1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+  
+  
+  
+  footer{
+      background: rgb(107, 156, 33);
+      color: honeydew;
+      padding: 9px 20px;
+  }
